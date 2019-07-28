@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ashart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img  class="graficlogo"src="images/logo.png" alt="logo" ></a>
+        </div>
+        <nav>
+            <div class="topnav" id="myTopnav">
+            <a href="index.html">HOME</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="blog.html">BLOG</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="servises.html">SERVICES</a>
+            <a href="location.html">LOCATION</a>
+            <a id="menu" href="#"class="icon">&#9776;</a>
+        </div>
+        </nav>
+    </header>
+<main>
+<h1>location</h1>
+<div id="map">
+   
+</div>
+</main>
+<footer>
+    <nav>
+            <a href="index.html">HOME</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="blog.html">BLOG</a>
+            <a href="contact">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="servisec.html">SERVICES</a>
+            <a href="location.html">LOCATION</a>
+        
+    </nav>
+    <div class="logo">
+        <a href="index.html"><img class="graficlogo"src="images/logo.png" alt=""></a>
+    </div>
+    
+    <div class="social">
+        <a href="#"><img src="socialmedia/em.png" alt=""></a>
+        <a href="#"><img src="socialmedia/inst.png" alt=""></a>
+        <a href="#"><img src="socialmedia/face.png" alt=""></a>
+        <a href="#"><img src="socialmedia/goo.png" alt=""></a>
+        <a href="#"><img src="socialmedia/pint.png" alt=""></a>
+    </div>
+    <p>Web developer blog 2019</p>
+    </footer>
+
+    <script>
+        function initMap() {
+          var myLatLng = {lat: 59.9139778, lng: 30.3218556};
+  
+          // Create a map object and specify the DOM element
+          // for display.
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: myLatLng,
+            zoom: 5
+          });
+  
+          // Create a marker and set its position.
+          var marker = new google.maps.Marker({
+            map: map,
+            position: myLatLng,
+            title: 'Hello World!'
+          });
+        }
+  
+      </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAknnuW27HVoZZHoR-ujsRjnWRUgF2YRRs&callback=initMap"
+        async defer></script>
+        <script src="scripts/scripts.js"></script>
+</body>
+</html>
